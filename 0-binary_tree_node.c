@@ -2,11 +2,6 @@
 #include <stdlib.h>
 #include "binary_trees.h"
 
-// int main()
-// {
-// 	return (0);
-// }
-
 /**
  * binary_tree_node - Create a Binary tree node
  *
