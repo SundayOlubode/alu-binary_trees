@@ -11,7 +11,6 @@
  */
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
-	// Move the variable declaration to the beginning of the block
 	binary_tree_t *new_left_node;
 	binary_tree_t *old_left_node;
 
@@ -21,6 +20,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	}
 
 	new_left_node = malloc(sizeof(binary_tree_t));
+
 	if (new_left_node == NULL)
 	{
 		return (NULL);
@@ -36,7 +36,6 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 		old_left_node = parent->left;
 		parent->left = new_left_node;
 		new_left_node->left = old_left_node;
-		old_left_node->parent = new_left_node; // Update the old node's parent pointer
 	}
 	else
 	{
