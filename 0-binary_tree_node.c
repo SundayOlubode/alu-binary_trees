@@ -7,7 +7,7 @@
  *
  * @parent: Pointer to the parent node
  * @value: Integer stored in the node
- * @return: pointer to a binary_tree_t
+ * Return: Pointer to a binary_tree_t tsruct new node
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
@@ -16,12 +16,12 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	if (new_node == NULL)
 	{
 		printf("Memory allocation failed for a new node\n");
-		return NULL;
+		return (NULL);
 	}
 
 	new_node->parent = parent;
 	new_node->n = value;
 	new_node->left = NULL;
 	new_node->right = NULL;
-	return new_node;
+	return (new_node);
 }
