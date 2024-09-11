@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include "binary_trees.h"
 
+/**
+ * binary_tree_delete_recursive - Delete tree recursively
+ *
+ * @tree: Pointer to (sub)tree
+ * Return: tree | NULL
+ */
 binary_tree_t *binary_tree_delete_recursive(binary_tree_t *tree)
 {
 	if (tree == NULL)
