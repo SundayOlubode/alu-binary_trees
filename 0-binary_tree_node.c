@@ -16,7 +16,7 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 	if (new_node == NULL)
 	{
 		printf("Memory allocation failed for a new node\n");
-		return (1);
+		return NULL;
 	}
 
 	new_node->parent = parent;
