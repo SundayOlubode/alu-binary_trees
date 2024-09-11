@@ -3,9 +3,10 @@
 #include "binary_trees.h"
 
 /**
- * binary_tree_preorder - Binary Tre Preorder
+ * binary_tree_preorder - Binary Tree Preorder
  *
  * @tree: Pointer to (sub)tree
+ * @func: Function to call for each node
  * Return: void
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
